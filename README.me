@@ -1,103 +1,63 @@
-Histogram Distribution Fitter
+# Histogram Distribution Fitter
 
-An interactive Streamlit web application for fitting and comparing probability distributions to numerical data. Designed for exploratory data analysis, the app supports manual data entry or CSV upload, automatic parameter estimation, and real-time visualization.
+Histogram Distribution Fitter is an interactive statistical analysis tool that lets users explore, fit, and compare probability distributions against real data. Built with Streamlit and SciPy, the app supports CSV or manual input, automatic maximum likelihood estimation, real-time visualization, and hands-on parameter tuning for intuitive exploratory data analysis.
 
-Overview
+---
 
-Histogram Distribution Fitter allows users to analyze numerical datasets by fitting and comparing multiple continuous probability distributions. The application emphasizes interactivity and visual feedback to support intuitive model comparison and statistical exploration.
+## Core Features
 
-Features
+- **Flexible data input** – manually enter numerical samples or upload CSV files  
+- **Distribution fitting** – fit and compare 10+ continuous probability distributions using SciPy  
+- **Automatic estimation** – parameters inferred via Maximum Likelihood Estimation (MLE)  
+- **Interactive tuning** – sliders allow manual adjustment of distribution parameters  
+- **Live visualization** – dynamically updated histograms with overlaid PDFs  
+- **Model comparison** – quantitative fit metrics for evaluating distribution quality  
 
-Histogram visualization with overlaid probability density functions
+---
 
-Support for fitting 10+ continuous probability distributions using SciPy
+## Supported Distributions
 
-Automatic parameter estimation via Maximum Likelihood Estimation (MLE)
+Common distributions include:
 
-Manual parameter tuning through interactive sliders
+- Normal (Gaussian)  
+- Log-Normal  
+- Gamma  
+- Weibull  
+- Beta  
+- Exponential  
+- Cauchy  
 
-Real-time updates to plots and fit metrics
+---
 
-Quantitative fit quality metrics for model comparison
+## System Overview
 
-Flexible data input via manual entry or CSV upload
+- `app.py` – Streamlit application handling UI, data ingestion, fitting logic, and plotting  
+- `requirements.txt` – Python dependencies  
+- `assets/` – optional static resources (images, icons, etc.)  
 
-Supported Distributions
+---
 
-Examples include:
+## Tech Stack
 
-Normal (Gaussian)
+- Python  
+- Streamlit  
+- NumPy  
+- SciPy  
+- Matplotlib  
+- Pandas  
 
-Log-Normal
+---
 
-Gamma
+## Local Development
 
-Weibull
+### Prerequisites
 
-Beta
+- Python 3.9+  
+- pip  
 
-Exponential
+### Installation
 
-Cauchy
-
-Tech Stack
-
-Python
-
-Streamlit
-
-NumPy
-
-SciPy
-
-Matplotlib
-
-Pandas
-
-Installation
+```bash
 git clone https://github.com/taranprits2/Histogram-Distribution-Fitter-Webapp.git
 cd Histogram-Distribution-Fitter-Webapp
 pip install -r requirements.txt
-
-Usage
-streamlit run app.py
-
-
-Enter numerical data manually or upload a CSV file
-
-Select one or more probability distributions to fit
-
-View fitted curves, estimated parameters, and fit metrics
-
-Adjust parameters interactively to explore distribution behavior
-
-Example Applications
-
-Exploratory data analysis
-
-Statistical modeling and distribution selection
-
-Teaching probability and statistics
-
-Rapid testing of distribution assumptions
-
-Project Structure
-├── app.py
-├── requirements.txt
-├── README.md
-└── assets/
-
-Future Improvements
-
-Support for discrete probability distributions
-
-Additional goodness-of-fit metrics (e.g., KS test, AIC, BIC)
-
-Exportable plots and reports
-
-Log-scale and cumulative distribution visualizations
-
-Author
-
-Taranprit Saini
-University of Waterloo
